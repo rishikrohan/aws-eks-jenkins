@@ -37,6 +37,8 @@ systemctl enable docker
 
 ```shell
 
+  cat /etc/group | grep -i docker
+
   sudo groupadd docker
   sudo usermod -aG docker jenkins
   sudo chmod 777 /var/run/docker.sock
@@ -46,8 +48,10 @@ systemctl enable docker
 ### add Jenkins user into sudoers file to get sudo access
 
 ```shell
-   vi /etc/sudoers
-   jenkins ALL=(ALL) NOPASSWD: ALL
+
+vi /etc/sudoers
+jenkins ALL=(ALL) NOPASSWD: ALL
+
 ```
 
 
