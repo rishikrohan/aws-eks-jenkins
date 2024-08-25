@@ -54,6 +54,8 @@ jenkins ALL=(ALL) NOPASSWD: ALL
 
 ```
 
+### Install and configure Docker & Maven plugin in Jenkins Server
+
 
 
 
